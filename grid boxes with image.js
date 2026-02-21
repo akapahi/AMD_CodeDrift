@@ -40,7 +40,7 @@ function generateGrid() {
         h: rowH,
         depth: random(40, 200),
         img: random(imgs),
-        offset: random(1000)
+        offset: random(100000)
       });
 
       x += colW;
@@ -64,7 +64,7 @@ function draw() {
     push();
 
     // breathing depth motion
-    let zOffset = sin(frameCount * 0.02 + c.offset) * 30;
+    let zOffset = sin(frameCount * 0.2 + c.offset) * 30;
 
     translate(c.x, c.y, zOffset);
 
