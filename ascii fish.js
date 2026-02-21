@@ -9,7 +9,7 @@ function setup() {
   textAlign(CENTER, CENTER);
 
   for (let i = 0; i < 1; i++) {
-    fishes.push(new Fish(random(-100, 0), 300, "><(((º>"));
+    fishes.push(new Fish(random(-100, 0), 300, "><CCCº>"));
   }
 }
 
@@ -140,7 +140,7 @@ class Fish {
   }
 
   displaySplash() {
-    for (let p of this.splashes) {
+    for (let p of this.splashes){
       text(p.char, p.x, p.y);
     }
   }
